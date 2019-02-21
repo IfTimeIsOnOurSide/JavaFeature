@@ -1,0 +1,35 @@
+# 不提交gradle文件
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+
+# 不提交编译后文件
+build
+bin
+out
+logs
+
+# 不提交敏感信息，如数据库权限。可以提交application.properties.exmaple，里面写示例
+**/application.properties
+**/application.yml
+java/01_regex/com/app/conf/info/Conf.java
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
