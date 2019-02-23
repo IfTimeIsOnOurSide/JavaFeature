@@ -9,7 +9,8 @@ import java.lang.reflect.Field;
  */
 public class stringBuliderVSstringBuffer {
     public static void main(String[] args) throws Exception {
-        staticString();
+//        staticString();
+          buildVSbuffer();
     }
 
     /**
@@ -32,8 +33,23 @@ public class stringBuliderVSstringBuffer {
     /**
     *  StringBuilder VS StringBuffer
     *   Java5出现StringBuilder (不能同步，线程不安全，但是它快)
+     *   synchronized 关键字
     */
-    public void buildVSbuffer () {
+    public static void buildVSbuffer () {
+        StringBuilder builder = new StringBuilder();
+        StringBuffer buffer = new StringBuffer();
 
+        //启动100个线程
+        for (int i = 0; i < 100; i++) {
+            Runnable runable =() -> {
+                for (int j = 0; j < 100; j++) {
+                    builder.append("0");
+                    buffer.append("0");
+                    System.out.println(" builder: " + builder.length() + " buffer: " + buffer.length());
+
+                }
+            };
+            new Thread(runable).start();
+        }
     }
 }
