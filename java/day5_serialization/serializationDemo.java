@@ -3,14 +3,15 @@ package day5_serialization;
 import java.io.*;
 
 /**
- * @Description: 序列化  Java具有可以执行的原因所在
+ * @Description: 序列化  Java具有可移植的原因所在
  * @author: daimin
  * @date: Create in 14:24 2019/2/28
  */
 public class serializationDemo {
     public static void main(String[] args) {
 //        toSerialization();
-
+        String str = "i";
+        String stri = new String("i");
         returnObject();
     }
 
