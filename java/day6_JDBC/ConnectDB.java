@@ -17,7 +17,7 @@ public class ConnectDB {
     /**
      * 数据驱动
      */
-    public static String driver = "com.mysql.jdbc.Driver";
+    public static String driver = "com.mysql.cj.jdbc.Driver";
 
     /**
      * 用户名 和 密码
@@ -38,8 +38,13 @@ public class ConnectDB {
             Class.forName(driver);
             Connection conn = DriverManager.getConnection(url, root, pwd);
             Statement state = conn.createStatement();
-            ResultSet result = state.executeQuery("select * from use");
+            ResultSet result = state.executeQuery("select * from fatie ");
 
+            System.out.println(result.getRow());
+          /*  while(result.next()) {
+                result.getObject(0);
+                System.out.println(result.getObject(0));
+            }*/
             //关闭
             result.close();
             state.close();
