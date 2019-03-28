@@ -3,7 +3,6 @@ package day7_proxy.dynamicProxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.Objects;
 
 /**
  * @Description: Java Proxy类，可以为传入的参数对象动态生成代理对象，并默认实现原始对象的所有接口
@@ -24,7 +23,7 @@ public class dynamicProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable{
-        System.out.println("在接口具体实现之前惊醒修改");
+        System.out.println("在接口具体实现之前进行修改");
         Object result = method.invoke(readObject, args);
         System.out.println("接口具体实现之后进行修改");
         return result;
