@@ -1,12 +1,5 @@
 package day7_proxy.dynamicProxy;
 
-import com.sun.prism.impl.Disposer;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 /**
  * @Description: 动态代理  中介类（实现InvocationHandler接口，根据传入的对象自动生成代理类）
  * @author: daimin
