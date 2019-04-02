@@ -1,4 +1,4 @@
-package day9_design.singleton;
+package day9_design.Create.Singleton;
 
 /**
  * @Description: 懒汉式因为锁因此同步的时候消耗资源比较多，而且线程安全需要volatile synchronized保证，因此通常用饿汉式单例

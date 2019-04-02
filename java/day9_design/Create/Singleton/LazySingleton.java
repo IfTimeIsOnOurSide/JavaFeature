@@ -1,4 +1,4 @@
-package day9_design.singleton;
+package day9_design.Create.Singleton;
 
 /**
  * @Description: 单例模式 ：懒汉式单例

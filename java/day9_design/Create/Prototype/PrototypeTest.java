@@ -1,4 +1,4 @@
-package day9_design.Prototype;
+package day9_design.Create.Prototype;
 
 /**
  * @Description:

@@ -1,4 +1,4 @@
-package day9_design.singleton;
+package day9_design.Create.Singleton;
 
 /**
  * @Description: 饿汉式单例 ： 在类创建的同事已经创建好一个静态的对象供系统使用
