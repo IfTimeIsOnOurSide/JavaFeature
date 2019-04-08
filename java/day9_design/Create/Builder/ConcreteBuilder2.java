@@ -7,7 +7,9 @@ package day9_design.Create.Builder;
  */
 public class ConcreteBuilder2 extends BuilderAbstract {
 
-    //实现抽象建造者的抽象接口方法
+    /**
+     * 实现抽象建造者的抽象接口方法
+     */
     @Override
     public void setPartA() {
         super.product.setA("2号具体建造者创建A部件");

@@ -11,7 +11,9 @@ public class Director {
         this.builder = builder;
     }
 
-    //产品构建和组装
+    /**
+     * 产品构建和组装
+     */
     public Product construct() {
         builder.setPartA();
         builder.setPartB();
