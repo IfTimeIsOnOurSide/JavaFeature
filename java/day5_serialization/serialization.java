@@ -3,7 +3,7 @@ package day5_serialization;
 import java.io.Serializable;
 
 /**
- * @Description:  想知道一个类可不可以序列化吗？ 那就看它有没有实现 Serialization 接口
+ * @Description:  想知道一个类可不可以序列化吗？ 那就看它有没有实现 Serializable 接口
  * @author: daimin
  * @date: Create in 14:06 2019/2/28
  */
