@@ -1,4 +1,4 @@
-package day10_thread;
+package day10_thread.API_Limit;
 
 import java.util.TimerTask;
 import java.util.concurrent.ExecutorService;
