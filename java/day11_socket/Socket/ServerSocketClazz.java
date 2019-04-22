@@ -1,4 +1,4 @@
-package day11_web.Socket;
+package day11_socket.Socket;
 
 import java.io.IOException;
 import java.net.ServerSocket;
